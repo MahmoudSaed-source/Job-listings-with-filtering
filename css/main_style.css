@@ -1,0 +1,197 @@
+:root {
+    --Desaturated_Dark_Cyan: hsl(180, 29%, 50%);
+    --Light_Grayish_Cyan_Background: hsl(180, 52%, 96%);
+    --Light_Grayish_Cyan_Filter_Tablets: hsl(180, 31%, 95%);
+    --Dark_Grayish_Cyan: hsl(180, 8%, 52%);
+    --Very_Dark_Grayish_Cyan: hsl(180, 14%, 20%);
+    --main-font: "League Spartan", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 11px;
+    font-family: var(--main-font);
+    background-color: var(--Light_Grayish_Cyan_Background);
+    background-image: url("/images/bg-header-desktop.svg");
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.Search-Container {
+    position: absolute;
+    width: 70%;
+    height: 50px;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+}
+
+.Search-Input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    user-select: none;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px #333;
+    display: flex;
+    align-items: center;
+}
+
+.List-search {
+    display: inline-block;
+    margin-left: 25px;
+    background-color: rgb(224, 250, 250);
+    color: #63baba;
+    padding: 5px;
+    margin-right: 3px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.Search-Input li::after {
+    content: "";
+    background-image: url(/images/icons8-close-white.svg);
+    background-position: center;
+    background-color: #52b7b7;
+    background-size: 20px;
+    border: 2px solid #52b7b7;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    right: -19px;
+    width: 17px;
+    height: 79%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.Search-Input li::after:hover {
+    background-color: #fff;
+}
+
+.Clear-Icon {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #63baba;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    margin-top: 156px;
+    padding: 50px;
+    /* border: 2px solid red; */
+    padding: 70px;
+    background-color: var(--Light_Grayish_Cyan_Background);
+}
+
+.jobs {
+    width: 100%;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 2px #333;
+    background-color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+.jobs::before {
+    content: "";
+    position: absolute;
+    height: 98%;
+    border: 1px solid #63baba;
+    top: 0px;
+    left: 0;
+}
+
+.job_details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.job_details .details {
+    margin-bottom: 10px;
+}
+
+.ImgJob img {
+    width: 70px;
+    height: 70px;
+}
+
+.HeaderJob span {
+    display: inline-block;
+    margin-left: 20px;
+    color: var(--Desaturated_Dark_Cyan);
+}
+
+.HeaderJob span:nth-child(2) {
+    background-color: #63baba;
+    border-radius: 11px;
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.HeaderJob span:nth-child(3) {
+    background-color: #000000;
+    border-radius: 11px;
+    text-align: center;
+    padding: 3px;
+    color: #fff;
+}
+
+.details h2 {
+    margin-left: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.details .FooterJob span {
+    display: inline-block;
+    margin-left: 20px;
+    color: hsl(180deg 10% 70%);
+}
+
+.job_skills {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.job_skills .SkillsNames {
+    list-style: none;
+}
+
+.job_skills .SkillsNames .Li-Skill {
+    display: inline-block;
+    margin-left: 14px;
+    background-color: #d8f9f9;
+    text-align: center;
+    padding: 3px;
+    border-radius: 4px;
+    color: #63baba;
+    cursor: pointer;
+}
+
+.empty {
+    display: none;
+}
