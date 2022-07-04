@@ -44,9 +44,17 @@ body {
     align-items: center;
 }
 
+.ContentSearch {
+    display: flex;
+    width: 95px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
 .List-search {
     display: inline-block;
-    margin-left: 25px;
     background-color: rgb(224, 250, 250);
     color: #63baba;
     padding: 5px;
@@ -55,25 +63,19 @@ body {
     position: relative;
 }
 
-.Search-Input li::after {
-    content: "";
+.close {
     background-image: url(/images/icons8-close-white.svg);
     background-position: center;
     background-color: #52b7b7;
-    background-size: 20px;
+    background-size: 18px;
     border: 2px solid #52b7b7;
     color: #fff;
-    position: absolute;
-    top: 0;
-    right: -19px;
-    width: 17px;
-    height: 79%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1000;
-    border-radius: 3px;
+    border-radius: 2px;
     cursor: pointer;
+    width: 19px;
+    height: 22px;
+    margin-left: -6px;
+    z-index: 1;
 }
 
 .Search-Input li::after:hover {
